@@ -4,6 +4,7 @@ import LatestInvoices from '@/app/ui/dashboard/latest-invoices';
 import { lusitana } from '@/app/ui/fonts';
 import { fetchRevenue,fetchLatestInvoices,fetchCardData  } from '@/app/lib/data';
 export default async function Page() {
+  console.log('dashboard已渲染');
   const revenue = await fetchRevenue();
   const latestInvoices = await fetchLatestInvoices();
   const {
